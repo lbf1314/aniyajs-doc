@@ -2,7 +2,7 @@
 title: ARadioGroup
 nav:
   title: 组件
-  path: /common
+  path: /aniyajs-doc/common
 group:
   title: 表单组件
 mobile: false
