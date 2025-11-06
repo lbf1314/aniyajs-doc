@@ -12,19 +12,19 @@ toc: content
 
 ### 基本使用
 
-`<code src="./demos/test01.tsx"></code>`
+<code src="./demos/test01.tsx"></code>
 
 ### 异步
 
-`<code src="./demos/test02.tsx"></code>`
+<code src="./demos/test02.tsx"></code>
 
 ### 自定义 selectOptions 格式
 
-`<code src="./demos/test03.tsx"></code>`
+<code src="./demos/test03.tsx"></code>
 
 ### 自定义异步 asyncFn
 
-`<code src="./demos/test04.tsx"></code>`
+<code src="./demos/test04.tsx"></code>
 
 ## API
 

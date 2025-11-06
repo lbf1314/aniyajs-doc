@@ -1,6 +1,6 @@
 {
   "name": "@aniyajs/components",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "`@aniyajs/components` 是一款基于 Ant Design 4、Ant Design 5 二次封装的组件",
   "keywords": [
     "antd",

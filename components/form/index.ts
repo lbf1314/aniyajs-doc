@@ -13,4 +13,3 @@ export { default as ATimePicker } from './atimepicker';
 export { default as ATree } from './atree';
 export { default as ATreeSelect } from './atreeselect';
 export { default as AUpload } from './aupload';
-export { default as AColorPicker } from './acolorpicker';
