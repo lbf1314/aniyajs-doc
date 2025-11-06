@@ -2,6 +2,7 @@ import { defineConfig } from 'dumi';
 import path from 'path';
 
 export default defineConfig({
+  base: "/aniyajs-doc/",
   logo: '/aniyajs-doc/img/logo.jpg',
   publicPath: "/aniyajs-doc/",
   outputPath: 'docs',
@@ -18,7 +19,7 @@ export default defineConfig({
     name: 'aniyajs',
     nav: [
       { title: '组件库', link: '/components' },
-      { title: '脚手架', link: '/scaffold', },
+      { title: '脚手架', link: '/scaffold' },
       { title: '工具集', link: '/tools/generator', },
     ],
     sidebar: {
