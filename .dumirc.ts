@@ -3,6 +3,8 @@ import path from 'path';
 
 export default defineConfig({
   logo: '/img/logo.jpg',
+  publicPath: "./",
+  runtimePublicPath: {},
   outputPath: 'docs',
   resolve: {
     docDirs: ["docs-src"],
