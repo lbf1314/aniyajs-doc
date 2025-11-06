@@ -5,6 +5,8 @@ export default defineConfig({
   logo: '/img/logo.jpg',
   publicPath: "./",
   runtimePublicPath: {},
+  cssMinifier: "none",
+  jsMinifier: "none",
   outputPath: 'docs',
   resolve: {
     docDirs: ["docs-src"],
