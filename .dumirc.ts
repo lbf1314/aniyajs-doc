@@ -3,10 +3,7 @@ import path from 'path';
 
 export default defineConfig({
   logo: '/img/logo.jpg',
-  publicPath: "./",
-  runtimePublicPath: {},
-  cssMinifier: "none",
-  jsMinifier: "none",
+  publicPath: "/aniyajs-doc/",
   outputPath: 'docs',
   resolve: {
     docDirs: ["docs-src"],
