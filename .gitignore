@@ -11,3 +11,4 @@ lib
 yarn.lock
 *-error.log
 docs-dist
+.dumi

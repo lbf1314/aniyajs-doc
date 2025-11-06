@@ -3,7 +3,8 @@ import path from 'path';
 
 export default defineConfig({
   logo: '/img/logo.jpg',
-  outputPath: 'docs-dist',
+  outputPath: 'docs',
+  docDirs: "docs-src",
   resolve: {
     atomDirs: [
       { type: 'component', dir: 'components/form' },
