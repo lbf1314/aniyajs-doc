@@ -1,0 +1,105 @@
+{
+  "name": "@aniyajs/components",
+  "version": "1.1.0",
+  "description": "`@aniyajs/components` 是一款基于 Ant Design 4、Ant Design 5 二次封装的组件",
+  "keywords": [
+    "antd",
+    "react",
+    "form"
+  ],
+  "bugs": {
+    "url": "https://gitee.com/liu-bingfang/aniyajs-components/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/liu-bingfang/aniyajs-components"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "liubingfang",
+    "email": "2906617851@qq.com"
+  },
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "father build && gulp",
+    "build:watch": "father dev",
+    "dev": "dumi dev",
+    "docs:build": "dumi build",
+    "doctor": "father doctor",
+    "lint": "npm run lint:es && npm run lint:css",
+    "lint:css": "stylelint \"{components,test}/**/*.{css,less}\"",
+    "lint:es": "eslint \"{components,test}/**/*.{js,jsx,ts,tsx}\"",
+    "prepare": "husky install && dumi setup",
+    "prepublishOnly": "father doctor && npm run build",
+    "start": "npm run dev"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{css,less}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "antd": "^5.8.1",
+    "babel-plugin-import": "^1.13.6",
+    "dayjs": "^1.11.7",
+    "exceljs": "^4.3.0",
+    "jszip": "^3.10.0",
+    "omit.js": "^2.0.2",
+    "umi-request": "^1.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/exceljs": "^1.3.0",
+    "@umijs/lint": "^4.0.0",
+    "dumi": "^2.0.2",
+    "eslint": "^8.23.0",
+    "father": "^4.1.0",
+    "gulp": "4",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^3.0.0",
+    "prettier-plugin-packagejson": "^2.2.18",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "stylelint": "^14.9.1",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,13 @@
+node_modules
+dist
+.dumi/tmp
+.dumi/tmp-test
+.dumi/tmp-production
+.DS_Store
+lock.json
+package-lock.json
+es
+lib
+yarn.lock
+*-error.log
+docs-dist

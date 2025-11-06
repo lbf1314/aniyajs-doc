@@ -1,0 +1,16 @@
+export { default as AAutoComplete } from './aautocomplete';
+export { default as ACascader } from './acascader';
+export { default as ACheckboxGroup } from './acheckboxgroup';
+export { default as ADatePicker } from './adatepicker';
+export { default as ADateRangePicker } from './adaterangepicker';
+export { default as AInput } from './ainput';
+export { default as ARadioGroup } from './aradiogroup';
+export { default as ARate } from './arate';
+export { default as ASelect } from './aselect';
+export { default as ASlider } from './aslider';
+export { default as ASwitch } from './aswitch';
+export { default as ATimePicker } from './atimepicker';
+export { default as ATree } from './atree';
+export { default as ATreeSelect } from './atreeselect';
+export { default as AUpload } from './aupload';
+export { default as AColorPicker } from './acolorpicker';

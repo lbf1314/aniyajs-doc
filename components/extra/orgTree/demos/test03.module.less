@@ -1,0 +1,24 @@
+.test03 {
+  .item {
+    padding: 5px 10px;
+    text-align: center;
+    color: #000;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.15);
+    span {
+      color: red;
+    }
+  }
+  // 调整线条颜色、选中停留颜色
+  :global {
+    .org_tree_node_label:hover,
+    .org_tree_node_label_sel {
+      background-color: transparent;
+    }
+    .isLeaf::before,
+    .org_tree_node::before,
+    .org_tree_node::after {
+      background-color: #ccc !important;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+import { ACascader } from '@aniyajs/components';
+import { Button, Form } from 'antd';
+import React from 'react';
+
+const Test04: React.FC<any> = () => {
+  const onFinish = (values: any) => {
+    console.log('values :>> ', values);
+  };
+
+  return (
+    <Form name="test04" style={{ maxWidth: 600 }} onFinish={onFinish}>
+      <ACascader
+        name="test04"
+        label="省市区"
+        rules={[
+          {
+            required: true,
+            message: '请选择',
+          },
+        ]}
+        selectOptions={[
+          {
+            value: 'zhejiang',
+            label: '浙江',
+            isLeaf: false,
+          },
+          {
+            value: 'jiangsu',
+            label: '江苏',
+            isLeaf: false,
+          },
+        ]}
+        loadDataOptions={[
+          null,
+          {
+            action: 'http://yapi.yunxiaowei.cn/mock/168/sys/city',
+            queryKey: 'id',
+          },
+          {
+            action: 'http://yapi.yunxiaowei.cn/mock/168/sys/area',
+            queryKey: 'id',
+          },
+        ]}
+        formatter={(childData, _, index) => {
+          if (index === 1) {
+            return childData?.map((item) => ({
+              label: item?.cityName,
+              value: item?.id,
+              isLeaf: false,
+            }));
+          }
+
+          if (index === 2) {
+            return childData?.map((item) => ({
+              label: item?.name,
+              value: item?.id,
+            }));
+          }
+
+          return false;
+        }}
+        formItemProps={{
+          labelCol: { span: 6 },
+          wrapperCol: { span: 18 },
+        }}
+        widgetProps={{
+          allowClear: true,
+        }}
+      />
+      <Form.Item wrapperCol={{ offset: 6, span: 18 }}>
+        <Button type="primary" htmlType="submit">
+          Submit
+        </Button>
+      </Form.Item>
+    </Form>
+  );
+};
+
+export default Test04;

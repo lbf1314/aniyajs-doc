@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "strict": false,
+    "declaration": true,
+    "skipLibCheck": true,
+    "emitDeclarationOnly": true,
+    "paths": {
+      "@aniyajs/components": [
+        "./components"
+      ],
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    ".dumirc.ts",
+    "./components",
+    "./typing.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "es",
+    "dist"
+  ]
+}
