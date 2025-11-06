@@ -12,23 +12,23 @@ toc: content
 
 ### 导出 excel
 
-`<code src="./demos/test01.tsx"></code>`
+<code src="./demos/test01.tsx"></code>
 
 ### 打包下载图片文本文件
 
-`<code src="./demos/test02.tsx"></code>`
+<code src="./demos/test02.tsx"></code>
 
 ### 异步下载
 
-`<code src="./demos/test03.tsx"></code>`
+<code src="./demos/test03.tsx"></code>
 
 ### 自定义 children
 
-`<code src="./demos/test04.tsx"></code>`
+<code src="./demos/test04.tsx"></code>
 
 ### 自定义异步 asyncFn
 
-`<code src="./demos/test05.tsx"></code>`
+<code src="./demos/test05.tsx"></code>
 
 ## API
 
@@ -49,7 +49,7 @@ toc: content
 
 ### Types
 
-#### `<font id="folderdatas">`folderDatas`</font>`
+#### <font id="folderdatas">folderDatas</font>
 
 ```tsx
 interface folderDatas {

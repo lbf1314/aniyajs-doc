@@ -12,27 +12,27 @@ toc: content
 
 ### 基础演示
 
-`<code src="./demos/test01.tsx"></code>`
+<code src="./demos/test01.tsx"></code>
 
 ### 不可折叠
 
-`<code src="./demos/test02.tsx"></code>`
+<code src="./demos/test02.tsx"></code>
 
 ### 自定义节点内容
 
-`<code src="./demos/test03.tsx"></code>`
+<code src="./demos/test03.tsx"></code>
 
-### `<font color='red'>`自定义展开方向`</font>`
+### <font color='red'>自定义展开方向</font>
 
-`<code src="./demos/test04.tsx"></code>`
+<code src="./demos/test04.tsx"></code>
 
-### `<font color='red'>`异步`</font>`
+### <font color='red'>异步</font>
 
-`<code src="./demos/test05.tsx"></code>`
+<code src="./demos/test05.tsx"></code>
 
 ### 完全受控
 
-`<code src="./demos/test06.tsx"></code>`
+<code src="./demos/test06.tsx"></code>
 
 ## API
 
@@ -48,7 +48,7 @@ toc: content
 
 ### Types
 
-#### `<font id="datatype">`DataType`</font>`
+#### <font id="datatype">DataType</font>
 
 ```typescript
 export type DataType = {

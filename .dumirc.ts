@@ -17,12 +17,12 @@ export default defineConfig({
   themeConfig: {
     name: 'aniyajs',
     nav: [
-      { title: '组件库', link: '/aniyajs-doc/components' },
-      { title: '脚手架', link: '/aniyajs-doc/scaffold', },
-      { title: '工具集', link: '/aniyajs-doc/tools/generator', },
+      { title: '组件库', link: '/components' },
+      { title: '脚手架', link: '/scaffold', },
+      { title: '工具集', link: '/tools/generator', },
     ],
     sidebar: {
-      '/aniyajs-doc/': [],
+      '/': [],
     },
   },
   extraBabelPlugins: [],
