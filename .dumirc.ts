@@ -4,6 +4,7 @@ import path from 'path';
 export default defineConfig({
   logo: '/aniyajs-doc/img/logo.jpg',
   publicPath: "/aniyajs-doc/",
+  base: "/aniyajs-doc/",
   outputPath: 'docs',
   resolve: {
     docDirs: ["docs-src"],
