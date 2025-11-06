@@ -2,7 +2,7 @@ import { defineConfig } from 'dumi';
 import path from 'path';
 
 export default defineConfig({
-  logo: '/img/logo.jpg',
+  logo: '/aniyajs-doc/img/logo.jpg',
   publicPath: "/aniyajs-doc/",
   outputPath: 'docs',
   resolve: {
@@ -13,7 +13,7 @@ export default defineConfig({
     ],
     codeBlockMode: 'passive',
   },
-  favicons: ['/img/favicon.ico'],
+  favicons: ['/aniyajs-doc/img/favicon.ico'],
   themeConfig: {
     name: 'aniyajs',
     nav: [
